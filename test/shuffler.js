@@ -1,4 +1,4 @@
-var assert = require('assert')
+var assert = require('assert'),
     shuffler = require('../lib/shuffler');
 
 describe('shuffler', function() {
@@ -16,8 +16,8 @@ describe('shuffler', function() {
             shuffledTextWords = shuffledText.split(' ');
 
         originalTextWords.forEach(function(word, i) {
-            assert.equal(shuffledTextWords[i].charAt(0), word.charAt(0))
-            assert.equal(shuffledTextWords[i].slice(-1), word.slice(-1))
+            assert.equal(shuffledTextWords[i].charAt(0), word.charAt(0));
+            assert.equal(shuffledTextWords[i].slice(-1), word.slice(-1));
         })
     });
     
@@ -26,8 +26,8 @@ describe('shuffler', function() {
             shuffledText = shuffler(originalText),
             shuffledTextWords = shuffledText.split(' ');
 
-        assert.equal(shuffledTextWords[4], 'day,')
-        assert.equal(shuffledTextWords[8], 'it.')
+        assert.equal(shuffledTextWords[4], 'day,');
+        assert.equal(shuffledTextWords[8], 'it.');
         assert.equal(shuffledTextWords[11].slice(-3), 'n!!')
     });
 });
