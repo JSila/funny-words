@@ -1,7 +1,15 @@
 {
+  "version": "0.1.1",
   "name": "funny-words",
-  "version": "0.1.0",
-  "description": "",
+  "description": "Package that takes a sentence and shuffles its words with fixed first and last letter of the word.",
+  "author": "Jernej Sila <jernej.sila@gmail.com>",
+  "keywords": [
+      "shuffle",
+      "funny",
+      "words",
+      "random"
+  ],
+  "license": "MIT",
   "main": "lib/index.js",
   "devDependencies": {
     "mocha": "^2.4.5",
@@ -10,7 +18,8 @@
   "scripts": {
     "test": "mocha"
   },
-  "keywords": [],
-  "author": "Jernej Sila",
-  "license": "MIT"
+  "repository": "jsila/funny-words",
+  "bugs": {
+      "url": "https://github.com/JSila/funny-words/issues"
+  }
 }
